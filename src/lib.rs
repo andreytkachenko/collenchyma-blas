@@ -43,7 +43,7 @@
 #![cfg_attr(lint, feature(plugin))]
 #![cfg_attr(lint, plugin(clippy))]
 #![allow(dead_code)]
-#![deny(missing_docs,
+#![deny(/*missing_docs,*/
         missing_debug_implementations, missing_copy_implementations,
         trivial_casts, trivial_numeric_casts,
         unused_import_braces, unused_qualifications)]

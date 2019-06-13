@@ -14,7 +14,7 @@ keywords        = ["blas", "collenchyma", "computation", "hpc", "plugin"]
 license         = "MIT OR Apache-2.0"
 
 [dependencies]
-collenchyma = { version = "0.0.8", default-features = false }
+collenchyma = { version = "0.0.8",  path="../collenchyma", default-features = false }
 lazy_static = "0.1"
 
 # native
@@ -30,7 +30,7 @@ clippy = { version = "0.0.27", optional = true }
 rand = "0.3"
 
 [features]
-default = ["native", "cuda", "opencl"]
+default = ["native", "cuda"]
 native = ["collenchyma/native", "rblas"]
 cuda = ["collenchyma/cuda", "cublas"]
 opencl = ["collenchyma/opencl"]
